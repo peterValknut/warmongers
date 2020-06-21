@@ -1,0 +1,22 @@
+{% load wagtailcore_tags wagtailimages_tags static %}
+
+{% image page.image fill-1920x600 as image %}
+<div class="container-fluid hero" style="background-image:url('{{ image.url }}')">
+    <div class="hero-gradient-mask"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 home-hero">
+                <h1>{{ page.title }}</h1>
+                <p class="lead">{{ page.hero_text }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <p>{{ page.introduction }}</p>
+        </div>
+    </div>
+</div>

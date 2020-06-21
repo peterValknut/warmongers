@@ -1,0 +1,1 @@
+web: gunicorn valknut.wsgi:application --log-file -

@@ -1,0 +1,9 @@
+*.pyc
+.DS_Store
+*.swp
+valknut/static/
+/media/
+.env
+static/
+*.sqlite3
+cache/
